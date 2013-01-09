@@ -1,3 +1,7 @@
+begin # json is a gem in ruby 1.8
+  require 'rubygems'
+rescue Exception
+end
 require 'json'
 require 'pegex/grammar'
 

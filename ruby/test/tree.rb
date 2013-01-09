@@ -22,19 +22,19 @@ class TestPegex
     label '$BlockLabel - Pegex::Tree'
     run_test(
       block,
-      "parse_to_tree('Pegex::Tree', *grammar, *input).yaml.clean == *tree",
+      "parse_to_tree('Pegex::Tree', *grammar, *input).yaml.clean == *tree"
     )
 
     label('$BlockLabel - Pegex::Tree::Wrap');
     run_test(
       block,
-      "parse_to_tree('Pegex::Tree::Wrap', *grammar, *input).yaml.clean == *wrap",
+      "parse_to_tree('Pegex::Tree::Wrap', *grammar, *input).yaml.clean == *wrap"
     )
 
     label('$BlockLabel - t::TestAST');
     run_test(
       block,
-      "parse_to_tree('TestAST', *grammar, *input).yaml.clean == *ast",
+      "parse_to_tree('TestAST', *grammar, *input).yaml.clean == *ast"
     )
   end
 
@@ -45,3 +45,4 @@ class TestPegex
     return parser.parse(input)
   end
 end
+
